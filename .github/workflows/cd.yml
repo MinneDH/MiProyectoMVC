@@ -31,7 +31,7 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Publicar proyecto
-        run: dotnet publish src/MiProyectoMVC/MiProyectoMVC.csproj -c Release -o ./publish
+        run: dotnet publish MiProyectoMVC/MiProyectoMVC.csproj -c Release -o ./publish
 
       - name: Deploy a Azure Web App
         uses: azure/webapps-deploy@v3
